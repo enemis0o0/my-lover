@@ -1,0 +1,93 @@
+@font-face {
+     font-family: HomeMadeSausage;
+     src: url("resources/font/Homemade\ Sausage.ttf");
+}
+@font-face {
+     font-family: Stanberry;
+     src: url("resources/font/Stanberry.ttf");
+}
+@font-face {
+     font-family: MatSaleh;
+     src: url("resources/font/Mat\ Saleh.otf");
+}
+
+:root {
+     --mainBackgroundColor: #22223b;
+     --mainFontColor: #f2e9e4;
+     --mainFontSize: 6vw;
+
+     --fontButton: MatSaleh;
+     --fontMain: HomeMadeSausage;
+     --fontFooter: Stanberry;
+}
+
+* {
+     margin: 0;
+     padding: 0;
+}
+
+body {
+     background-color: var(--mainBackgroundColor);
+}
+
+canvas {
+     position: absolute;
+     top: 0;
+     left: 0;
+}
+
+main {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+
+     padding: 10vw;
+}
+
+p {
+     color: var(--mainFontColor);
+     text-align: justify;
+     font-size: var(--mainFontSize);
+
+     margin-bottom: 3vh;
+
+     font-family: var(--fontMain);
+}
+
+a {
+     width: 29.3vw;
+     background-color: var(--mainFontColor);
+     border-radius: 50px;
+     border: 2px solid #9a8c98;
+     margin-left: 5vw;
+     margin-right: 5vw;
+
+     font-size: var(--mainFontSize);
+     font-family: var(--fontButton);
+     color: black;
+
+     text-decoration: none;
+
+     position: relative;
+     z-index: 100;
+}
+
+footer {
+     text-align: right;
+     color: var(--mainFontColor);
+     font-family: var(--fontFooter);
+
+     padding: 3vw;
+}
+
+.buttons {
+     position: relative;
+     left: -300vw;
+     transition: all 2s ease-out;
+}
+
+.footer {
+     color: transparent;
+     transition: all 2s ease-out;
+}
