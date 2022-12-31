@@ -6,7 +6,6 @@ let initialization = () => {
      getText();
      actualizateHeight();
      loadParticles();
-     link();
 };
 
 window.onload = initialization;
@@ -14,7 +13,7 @@ window.onload = initialization;
 let loadParticles = () => {
      particlesJS.load(
           `particles-js`,
-          "../resources/particlesConfig/particlesjs-config.json",
+          "/resources/particlesConfig/particlesjs-config.json",
           function () {
                console.log(`callback - particles.js config loaded`);
           }
@@ -66,7 +65,7 @@ let typing = () => {
 };
 
 let getText = async () => {
-     let res = await fetch("../resources/message.txt");
+     let res = await fetch("/resources/message.txt");
      text = await res.text();
      typing();
 };
