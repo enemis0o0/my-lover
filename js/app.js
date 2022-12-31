@@ -13,7 +13,7 @@ window.onload = initialization;
 let loadParticles = () => {
      particlesJS.load(
           `particles-js`,
-          "/resources/particlesConfig/particlesjs-config.json",
+          "my-lover/resources/particlesConfig/particlesjs-config.json",
           function () {
                console.log(`callback - particles.js config loaded`);
           }
@@ -65,7 +65,7 @@ let typing = () => {
 };
 
 let getText = async () => {
-     let res = await fetch("/resources/message.txt");
+     let res = await fetch("my-lover/resources/message.txt");
      text = await res.text();
      typing();
 };
