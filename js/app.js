@@ -25,7 +25,6 @@ let actualizateHeight = () => {
           window.scroll(0, actualHeight);
           height = actualHeight;
      }
-     console.log("actualizado");
 };
 
 let buildFooter = () => {
